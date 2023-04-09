@@ -18,7 +18,7 @@ const Header = () => {
                 to='/'>Blog</NavLink>
             </nav>
             <div>
-                <button className='bg-green-300 hover:bg-green-600 px-7 py-5 rounded-lg text-stone-600 hover:text-red-300 font-bold text-xl'>Start Applying</button>
+                <button className='btn-primary'>Start Applying</button>
             </div>
         </div>
     );
