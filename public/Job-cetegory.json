@@ -1,0 +1,24 @@
+{
+    "categories": [
+        {
+            "name": "Software Developer",
+            "image": " /public/Icons/business 1.png",
+            "totalJobs": 800
+        },
+        {
+            "name": "IT Project Manager",
+            "image": "/public/Icons/social-media 1.png",
+            "totalJobs": 400
+        },
+        {
+            "name": "Cybersecurity Analyst",
+            "image": " /public/Icons/chip 1.png",
+            "totalJobs": 300
+        },
+        {
+            "name": "Database Administrator",
+            "image": "/public/Icons/accounts 1.png",
+            "totalJobs": 250
+        }
+    ]
+}

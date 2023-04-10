@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='grid bg-gray-100 grid-cols-2 md:grid-cols-3 items-center text-center py-14'>
             <div className='md:ml-6 ml-3  '>
-                <h1 className='text-animation'>Freelansing Career</h1>
+                <h1 className='text-animation'>Life Career</h1>
             </div>
             <nav className='font-bold text-neutral-700'>
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
