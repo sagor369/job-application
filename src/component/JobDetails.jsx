@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import {
   MapPinIcon,
   CurrencyDollarIcon,
@@ -26,9 +26,9 @@ const JobDetails = () => {
     phone,
     email,
     address,
+    
   } = job;
 
-  console.log(jobData);
   return (
     <div className="grid md:grid-cols-3 grid-cols-1 gap-4 mt-8 mx-20">
       <div className="md:col-span-2">
@@ -79,21 +79,23 @@ const JobDetails = () => {
           </h1>
 
           <p className="flex gap-3">
-            <PhoneIcon className="icon" />{" "}
-            <span className="title"> phone:</span> {phone}{" "}
+            <PhoneIcon className="icon" />
+            <span className="title"> phone:</span> {phone}
           </p>
           <p className="flex gap-3">
-            <EnvelopeIcon className="icon" />{" "}
+            <EnvelopeIcon className="icon" />
             <span className="title">email:</span>
-            {email}{" "}
+            {email}
           </p>
           <p className="flex gap-3">
-            <MapPinIcon className="icon" />{" "}
+            <MapPinIcon className="icon" />
             <span className="title"> location: </span>
-            {address}{" "}
+            {address}
           </p>
-          <button className="btn-primary mt-20 mx-auto w-full ">
-            Apply Now{" "}
+          <button className="btn-primary mt-20 w-full ">
+          <Link  to= {`/apply/${id}`} >
+            Apply Now
+          </Link>
           </button>
         </div>
       </div>
