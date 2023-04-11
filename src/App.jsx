@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { useLoaderData } from "react-router-dom";
 import JobCetegory from "./component/JobCetegory";
+import Feature from "./Feature";
 
 function App() {
   const [jobData, setJobData] = useState([]);
@@ -10,9 +11,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => setJobData(data.categories));
   }, []);
-  console.log(jobData);
-  const jobCetegoryData = useLoaderData();
-  // console.log(jobCetegoryData)
+  const featureJob = useLoaderData(); 
   return (
     <div className="App">
       <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 items-center">
@@ -50,6 +49,14 @@ function App() {
           {jobData.map((job, index) => (
             <JobCetegory job={job} key={index}></JobCetegory>
           ))}
+        </div>
+      </div>
+      <div>
+        <div>
+
+        </div>
+        <div>
+          <Feature featureJob = {featureJob}></Feature>
         </div>
       </div>
     </div>
