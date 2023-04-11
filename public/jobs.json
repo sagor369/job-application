@@ -5,14 +5,17 @@
       "image": "/public/All Images/google-1-1 1.png",
       "company": "Google LLC",
       "location": "Mountain View, CA",
-      "salary": "$150,000 - $250,000",
+      "salary": "$150k - $250k",
       "title": "Software Engineer",
       "time": "Full-time",
       "remoteOrOnsite": "Onsite",
       "description": "We are seeking a highly skilled software engineer to join our team. In this role, you will be responsible for developing and maintaining high-quality software products and services.",
       "responsibility": "-Design and implement software solutions that meet business requirements \n-Work collaboratively with cross-functional teams to identify and solve complex software problems \n-Write clean and maintainable code \n-Debug and troubleshoot software issues \n-Participate in code reviews and provide feedback to other developers",
       "education": "Bachelor's or Master's degree in Computer Science, Software Engineering or a related field",
-      "experiences": "5+ years of experience in software engineering with proficiency in at least one programming language (e.g. Java, C++, Python)"
+      "experiences": "5+ years of experience in software engineering with proficiency in at least one programming language (e.g. Java, C++, Python)",
+      "phone": "123-456-7890",
+      "email": "jobs@google.com",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043"
   
     },
     {
@@ -21,14 +24,17 @@
       "image": "/public/All Images/netflix-4 1.png",
       "company": "Microsoft Corporation",
       "location": "Redmond, WA",
-      "salary": "$120,000 - $200,000",
+      "salary": "$120k - $200k",
       "title": "Data Scientist",
       "time": "Full-time",
       "remoteOrOnsite": "Remote",
       "description": "We are seeking an experienced data scientist to join our team. In this role, you will be responsible for developing and implementing data-driven solutions to solve complex business problems.",
       "responsibility": "-Analyze and interpret large, complex datasets \n-Develop predictive models using statistical and machine learning techniques \n-Collaborate with cross-functional teams to identify opportunities for data-driven solutions \n-Communicate insights and recommendations to stakeholders",
       "education": "Master's or Ph.D. degree in Data Science, Statistics, Mathematics or a related field",
-      "experiences": "3+ years of experience in data science with expertise in statistical analysis and machine learning"
+      "experiences": "3+ years of experience in data science with expertise in statistical analysis and machine learning",
+      "phone": "123-456-7890",
+      "email": "jobs@microsoft.com",
+      "address": "1 Microsoft Way, Redmond, WA 98052"
   
     },
     {
@@ -37,14 +43,18 @@
       "image": "/public/All Images/Amazon_logo.jpg",
       "company": "Amazon.com, Inc.",
       "location": "Seattle, WA",
-      "salary": "$130,000 - $220,000",
+      "salary": "$130k - $220k",
       "title": "Software Development Engineer",
       "time": "Remote",
       "remoteOrOnsite": "Onsite",
       "description": "We are seeking a talented software development engineer to join our team. In this role, you will be responsible for developing and deploying large-scale, distributed systems.",
       "responsibility": "-Design and implement software solutions that meet business requirements \n-Work collaboratively with cross-functional teams to identify and solve complex software problems \n-Write clean and maintainable code \n-Debug and troubleshoot software issues \n-Participate in code reviews and provide feedback to other developers",
       "education": "Bachelor's or Masters degree in Computer Science, Software Engineering or a related field",
-      "experiences": "5+ years of experience in software engineering with proficiency in at least one programming language (e.g. Java, C++, Python)"
+      "experiences": "5+ years of experience in software engineering with proficiency in at least one programming language (e.g. Java, C++, Python)",
+      "phone": "123-456-7890",
+      "email": "jobs@amazon.com",
+      "address": "410 Terry Ave N, Seattle, WA 98109"
+
     
     },
     {
@@ -53,14 +63,17 @@
       "image": "/public/All Images/tesla-9 1.png",
       "company": "Apple Inc.",
       "location": "Cupertino, CA",
-      "salary": "$140,000 - $230,000",
+      "salary": "$140k - $230k",
       "title": "Machine Learning Engineer",
       "time": "Full-time",
       "remoteOrOnsite": "Remote",
       "description": "We are seeking an experienced product manager to join our team. In this role, you will be responsible for defining and driving the product roadmap for one of our core products.",
       "responsibility": "-Define product strategy and roadmap based on customer needs and market trends \n-Partner with cross-functional teams to develop and launch new products and features \n-Set product goals and track progress towards achieving them \n-Monitor product performance and identify areas for improvement \n-Communicate product vision and strategy to stakeholders",
       "education": "Bachelor's or Master's degree in Business, Computer Science or a related field",
-      "experiences": "5+ years of experience in product management with a proven track record of shipping successful products"
+      "experiences": "5+ years of experience in product management with a proven track record of shipping successful products",
+      "phone": "123-456-7890",
+      "email": "jobs@apple.com",
+      "address": "1 Apple Park Way, Cupertino, CA 95014"
     },
     {
       "id": 5,
@@ -68,14 +81,17 @@
       "image": "/public/All Images/Facebook-Logo.jpg",
       "company": "Facebook, Inc.",
       "location": "Menlo Park, CA",
-      "salary": "$160,000 - $250,000",
+      "salary": "$160k - $250k",
       "title": "Product Manager",
       "time": "Full-time",
       "remoteOrOnsite": "Onsite",
       "description": "We are seeking a highly skilled machine learning engineer to join our team. In this role, you will be responsible for developing and implementing state-of-the-art machine learning algorithms and systems.",
       "responsibility": "-Design and develop machine learning models and algorithms \n-Optimize machine learning models for performance and scalability \n-Work closely with cross-functional teams to integrate machine learning into products and services \n-Research and evaluate new machine learning technologies and techniques",
       "education": "Master's or Ph.D. degree in Computer Science, Machine Learning or a related field",
-      "experiences": "3+ years of experience in machine learning with a strong background in programming and mathematics"
+      "experiences": "3+ years of experience in machine learning with a strong background in programming and mathematics",
+      "phone": "123-456-7890",
+      "email": "jobs@facebook.com",
+      "address": "1 Hacker Way, Menlo Park, CA 94025"
     },
     {
       "id": 6,
@@ -83,14 +99,17 @@
       "image": "/public/All Images/Group 10021.png",
       "company": "Twitter, Inc.",
       "location": "San Francisco, CA",
-      "salary": "$120,000 - $200,000",
+      "salary": "$120k - $200k",
       "title": "Data Engineer",
       "time": "Remote",
       "remoteOrOnsite": "Onsite",
       "description": "We are seeking a talented software engineer to join our team. In this role, you will be responsible for designing and developing scalable, high-performance software systems that power our streaming service.",
       "responsibility": "-Design and develop software systems that scale to millions of users \n-Work closely with cross-functional teams to develop new features and improve existing ones \n-Optimize software systems for performance and reliability \n-Contribute to the software development lifecycle including design, development, testing, and deployment",
       "education": "Bachelor's or Master's degree in Computer Science, Software Engineering or a related field",
-      "experiences": "8+ years of experience in software engineering with proficiency in at least one programming language (e.g. Java, C++, Python)"
+      "experiences": "8+ years of experience in software engineering with proficiency in at least one programming language (e.g. Java, C++, Python)",
+      "phone": "123-456-7890",
+      "email": "jobs@google.com",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043"
       }
       ]
       

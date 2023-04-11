@@ -5,7 +5,6 @@ const Feature = ({featureJob}) => {
     const nb = featureJob.slice (0,4)
     const [item , setItem] = useState(nb)
     // setItem(nb[0])
-    console.log(item)
     const allData = () =>{
         setItem(featureJob)
     }
@@ -25,7 +24,7 @@ const Feature = ({featureJob}) => {
         {
             
         <div className=' flex justify-center mt-8,'>
-        <button className='btn-primary w-36 ,{`${item.length === 6 }? "hidden" : "" `}' onClick={allData}>See more</button>
+        <button className='btn-primary w-36 mt-12 ,{`${item.length === 6 }? "hidden" : "" `}' onClick={allData}>See more</button>
         </div>
         }
         </div>

@@ -32,7 +32,7 @@ const Jobs = ({ job }) => {
           </p>
         </div>
         <div className="">
-          <Link className="capitalize btn-primary py-2 " to="">
+          <Link className="capitalize btn-primary py-2 " to={`/jobs/${id}`}>
             View details
           </Link>
         </div>
