@@ -9,6 +9,8 @@ import './index.css'
 import Layout from './component/Layout';
 import JobDetails from './component/JobDetails';
 import ApplyJob from './component/ApplyJob';
+import Rechart from './component/Rechart';
+import Blog from './component/Blog';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
         path: '/apply',
         element: <ApplyJob></ApplyJob>,
         loader: () => fetch('/jobs.json')
+      },
+      {
+        path: '/rechart',
+        element: <Rechart></Rechart>
+      },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
       }
       
     ]

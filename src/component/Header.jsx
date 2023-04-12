@@ -11,11 +11,11 @@ const Header = () => {
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
                 to='/'>Home</NavLink>
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
-                to='/'>Statistics</NavLink>
+                to='/rechart'>Statistics</NavLink>
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
                 to='/apply'>Applied Jods</NavLink>
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
-                to='/'>Blog</NavLink>
+                to='/blog'>Blog</NavLink>
             </nav>
             <div>
                 <button className='btn-primary'>Start Applying</button>
