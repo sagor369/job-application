@@ -7,7 +7,7 @@ import Feature from "./Feature";
 function App() {
   const [jobData, setJobData] = useState([]);
   useEffect(() => {
-    fetch("/public/Job-cetegory.json")
+    fetch("/Job-cetegory.json")
       .then((res) => res.json())
       .then((data) => setJobData(data.categories));
   }, []);
