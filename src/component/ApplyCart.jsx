@@ -14,7 +14,7 @@ const ApplyCart = ({job , applyeData}) => {
     cart;
     return (
         <div>
-            <div className="md:flex gap-4 my-4">
+            <div className="md:flex gap-4 md:my-4 my-10 md:border ">
             <div className="w-48 h-48 bg-gray-100 rounded flex justify-center items-center">
                 <img className=" " src={image} alt="" />
             </div>
