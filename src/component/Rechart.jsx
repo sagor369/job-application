@@ -1,78 +1,55 @@
 import React from 'react';
-import {
-    ComposedChart,
-    Line,
-    Area,
-    Bar,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-    ResponsiveContainer,
-  } from 'recharts';
-  
-  const data = [
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis} from 'recharts'
+
+
+  const assingment = [
     {
-      name: 'Page A',
-      uv: 590,
-      pv: 800,
-      amt: 1400,
+      name: 'milestone 1',
+      marks: 57,
+     
     },
     {
-      name: 'Page B',
-      uv: 868,
-      pv: 967,
-      amt: 1506,
+      name: 'milestone 2',
+      marks: 58,
+      
     },
     {
-      name: 'Page C',
-      uv: 1397,
-      pv: 1098,
-      amt: 989,
+      name: 'milestone 3',
+      marks: 58,
+      
     },
     {
-      name: 'Page D',
-      uv: 1480,
-      pv: 1200,
-      amt: 1228,
+      name: 'milestone 4',
+      marks: 60,
+      
     },
     {
-      name: 'Page E',
-      uv: 1520,
-      pv: 1108,
-      amt: 1100,
+      name: 'milestone 5',
+      marks: 56,
+      
     },
     {
-      name: 'Page F',
-      uv: 1400,
-      pv: 680,
-      amt: 1700,
+      name: 'milestone 6',
+      marks: 58,
+      
+    },
+    {
+      name: 'milestone 7',
+      marks: 48,
+      
     },
   ];  
 
 const Rechart = () => {
     return (
-        <ResponsiveContainer width="100%" height="100%">
-        <ComposedChart
-          width={500}
-          height={400}
-          data={data}
-          margin={{
-            top: 20,
-            right: 20,
-            bottom: 20,
-            left: 20,
-          }}
-        >
-          <CartesianGrid stroke="#f5f5f5" />
-          <XAxis dataKey="name" scale="band" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-          <Line type="monotone" dataKey="uv" stroke="#ff7300" />
-        </ComposedChart>
+        <ResponsiveContainer width="80%" aspect={2} >
+            <BarChart data = {assingment} >
+                <XAxis dataKey='name' />
+                <YAxis/>
+
+                <Bar dataKey='marks' fill='red'></Bar>
+            </BarChart>
+        
       </ResponsiveContainer>
     );
 };
