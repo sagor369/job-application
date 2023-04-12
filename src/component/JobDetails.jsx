@@ -26,6 +26,7 @@ const JobDetails = () => {
     phone,
     email,
     address,
+    company
     
   } = job;
 
@@ -59,18 +60,27 @@ const JobDetails = () => {
       </div>
       <div className="bg-gray-100">
         <h1 className="border-b-2 font-bold text-2xl capitalize text-center py-4">
+            <span >
+        company: {company}<br/>
+
+            </span>
           job details
         </h1>
         <div className="mx-4 py-8 ">
+            <h1 className="title "></h1>
           <p className="flex gap-3">
             <CurrencyDollarIcon className="icon" />
-            <span className="title">Salary: </span>
-            {salary} (per month)
+            <h1>
+                <span className="title">Salary: </span>
+                {salary} (per month)
+            </h1>
           </p>
           <p className="flex gap-3">
             <BriefcaseIcon className="icon" />
-            <span className="title">Job title:</span>
-            {title}
+            <h1>
+                <span className="title">Job title: </span>
+                 {title}
+            </h1>
           </p>
         </div>
         <div className="mx-4 mb-8">

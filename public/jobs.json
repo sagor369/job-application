@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Google",
-      "image": "/public/All Images/google-1-1 1.png",
+      "image": "/All Images/google-1-1 1.png",
       "company": "Google LLC",
       "location": "Mountain View, CA",
       "salary": "$150k - $250k",
@@ -21,7 +21,7 @@
     {
       "id": 2,
       "name": "Microsoft",
-      "image": "/public/All Images/netflix-4 1.png",
+      "image": "/All Images/netflix-4 1.png",
       "company": "Microsoft Corporation",
       "location": "Redmond, WA",
       "salary": "$120k - $200k",
@@ -40,7 +40,7 @@
     {
       "id": 3,
       "name": "Amazon",
-      "image": "/public/All Images/Amazon_logo.jpg",
+      "image": "/All Images/Amazon_logo.jpg",
       "company": "Amazon.com, Inc.",
       "location": "Seattle, WA",
       "salary": "$130k - $220k",
@@ -60,7 +60,7 @@
     {
       "id": 4,
       "name": "Apple",
-      "image": "/public/All Images/tesla-9 1.png",
+      "image": "/All Images/tesla-9 1.png",
       "company": "Apple Inc.",
       "location": "Cupertino, CA",
       "salary": "$140k - $230k",
@@ -78,7 +78,7 @@
     {
       "id": 5,
       "name": "Facebook",
-      "image": "/public/All Images/Facebook-Logo.jpg",
+      "image": "/All Images/Facebook-Logo.jpg",
       "company": "Facebook, Inc.",
       "location": "Menlo Park, CA",
       "salary": "$160k - $250k",
@@ -96,7 +96,7 @@
     {
       "id": 6,
       "name": "Twitter",
-      "image": "/public/All Images/Group 10021.png",
+      "image": "/All Images/Group 10021.png",
       "company": "Twitter, Inc.",
       "location": "San Francisco, CA",
       "salary": "$120k - $200k",

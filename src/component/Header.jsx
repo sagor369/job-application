@@ -13,7 +13,7 @@ const Header = () => {
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
                 to='/'>Statistics</NavLink>
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
-                to='/'>Applied Jods</NavLink>
+                to='/apply'>Applied Jods</NavLink>
                 <NavLink className='ml-6 hover:border p-2 , {({isActive}) => isActice ? "active" : ""}' 
                 to='/'>Blog</NavLink>
             </nav>
