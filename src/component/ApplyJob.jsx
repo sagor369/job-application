@@ -13,7 +13,8 @@ const ApplyJob = () => {
 
    
   useEffect(() => {
-    if(applyId){
+    const errorData = applyeData.find(ad => ad.id == applyId)
+    if(errorData){
       let itemJob = []
     const loadData = getJobData();
     if (loadData.length > 0) {
