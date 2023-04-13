@@ -3,6 +3,7 @@ import "./App.css";
 import { useLoaderData } from "react-router-dom";
 import JobCetegory from "./component/JobCetegory";
 import Feature from "./Feature";
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   const [jobData, setJobData] = useState([]);
@@ -59,6 +60,7 @@ function App() {
           <Feature featureJob = {featureJob}></Feature>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }

@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { addToDb, getJobData } from "./fakedb";
 import ApplyCart from "./ApplyCart";
+import {Toaster, toast} from "react-hot-toast"
 
 const ApplyJob = () => {
   const applyeData = useLoaderData();
   const { applyId } = useParams();
   const getLocalData = getJobData();
   const [jobs, setJobs] = useState(getLocalData);
-  
+  const notify = () => toast('all ready added your job', );
+
+   
   useEffect(() => {
     if(applyId){
       let itemJob = []
@@ -16,7 +19,9 @@ const ApplyJob = () => {
     if (loadData.length > 0) {
         const findData = loadData.find((data) => data.id == applyId);
         if(findData){
+          notify()
             setJobs(loadData)
+
         }
         else{
             const data = {id: applyId}
@@ -45,6 +50,14 @@ const ApplyJob = () => {
                  key={job.id} 
                  ></ApplyCart>)
         }
+        <Toaster toastOptions={{
+    
+    style: {
+      border: '1px solid #713200',
+      padding: '16px',
+      color: 'red',
+    },
+  }}/>
     </div>
   );
 };
