@@ -4,14 +4,18 @@ import { Link } from 'react-router-dom';
 
 
 const ApplyCart = ({job , applyeData}) => {
-    const [cart, setCart] = useState([])
-    useEffect(()=>{
-        const data = applyeData.find( jb => jb.id == job.id)
-        setCart(data)
-    },[])
+    // const [cart, setCart] = useState({})
+    // useEffect(()=>{
+    //     const data = applyeData.find( jb =>(jb.id == job.id ))
+    //     if(data){
+            
+    //         setCart(data)
+    //     }
+    // },[applyeData])
+
 
     const { image, id, title, company, remoteOrOnsite, time, location, salary } =
-    cart;
+    job;
     return (
         <div>
             <div className="md:flex gap-4 md:my-4 my-10 md:border ">

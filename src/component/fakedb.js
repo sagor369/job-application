@@ -1,9 +1,11 @@
 // use local storage to manage cart data
+
+
 const addToDb = id => {
     let JobData = getJobData();
     const quantity = JobData.find(cart => cart.id == id)
     if (quantity) {
-        console.log('ami ace')
+        return id
     }
     else {
         const cart = {id: id} 

@@ -7,46 +7,57 @@ import {Toaster, toast} from "react-hot-toast"
 const ApplyJob = () => {
   const applyeData = useLoaderData();
   const { applyId } = useParams();
-  const getLocalData = getJobData();
-  const [jobs, setJobs] = useState(getLocalData);
+  // const [jobs, setJobs] = useState(getLocalData);
   const notify = () => toast('all ready added your job', );
-
-   
-  useEffect(() => {
-    const errorData = applyeData.find(ad => ad.id == applyId)
-    if(errorData){
-      let itemJob = []
-    const loadData = getJobData();
-    if (loadData.length > 0) {
-        const findData = loadData.find((data) => data.id == applyId);
-        if(findData){
-          notify()
-            setJobs(loadData)
-
-        }
-        else{
-            const data = {id: applyId}
-            itemJob = [...loadData, data]
-            setJobs(itemJob)
-            addToDb(applyId)
-            
-            
-        }
-
+  if(applyId){
+    const addLoacl = addToDb(applyId)
+    if(addLoacl){
+      notify()
     }
-    else{
-        const data = {id: applyId}
-        itemJob.push(data)
-        setJobs(itemJob)
-        addToDb(applyId)
-    } }
-},[applyId])
+  }
+  const [apply , setApply] = useState(applyeData)
+
+const getLocalData = getJobData();
+  // find data in button 
+  const findJob= (id) => {
+    let localData = []
+    getLocalData.map(ld => {
+      const remotfind = applyeData.find(fd => fd.id == ld.id)
+      if(remotfind){
+        if(remotfind.remoteOrOnsite == id) {
+          localData.push(remotfind)
+        }       
+      }
+
+    })
+    setApply(localData)
+    
+  } 
+  
+// on load data in apply card 
+useEffect( () => {
+  let localData = []
+  getLocalData.map(ld => {
+    const remotfind = applyeData.find(fd => fd.id == ld.id)
+    if(remotfind){
+        localData.push(remotfind)
+    }
+  })
+  setApply(localData)
+} ,[])
+   
+  
 
   return (
     <div className="mx-20">
+      <div className="text-right mt-6 ">
+        <Link className="border btn-primary py-3 px-4 ml-4"  to = '/apply'>All jobs</Link>
+        <button onClick={()=> findJob("Remote")} className="border btn-primary py-3 px-4 ml-4" to = ''>Remote</button>
+        <button onClick={()=> findJob("Onsite")} className="border btn-primary py-3 px-4 ml-4" to = ''>On-site</button>
+      </div>
+      
         {
-            jobs.map(job => <ApplyCart 
-                applyeData={applyeData}
+            apply.map(job => <ApplyCart 
                 job= {job}
                  key={job.id} 
                  ></ApplyCart>)
