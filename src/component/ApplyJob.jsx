@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import { addToDb, getJobData } from "./fakedb";
 import ApplyCart from "./ApplyCart";
 import {Toaster, toast} from "react-hot-toast"
@@ -51,7 +51,7 @@ useEffect( () => {
   return (
     <div className="mx-20">
       <div className="text-right mt-6 ">
-        <Link className="border btn-primary py-3 px-4 ml-4"  to = '/apply'>All jobs</Link>
+        <NavLink className="border btn-primary py-3 px-4 ml-4"  to = '/apply'>All jobs</NavLink>
         <button onClick={()=> findJob("Remote")} className="border btn-primary py-3 px-4 ml-4" to = ''>Remote</button>
         <button onClick={()=> findJob("Onsite")} className="border btn-primary py-3 px-4 ml-4" to = ''>On-site</button>
       </div>

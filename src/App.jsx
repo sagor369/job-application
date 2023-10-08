@@ -14,7 +14,7 @@ function App() {
   }, []);
   const featureJob = useLoaderData(); 
   return (
-    <div className="App">
+    <div className="mt-6">
       <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 items-center">
         <div className="">
           <div className="w-3/4 mx-auto">
@@ -56,7 +56,7 @@ function App() {
         <div>
 
         </div>
-        <div>
+        <div id="job">
           <Feature featureJob = {featureJob}></Feature>
         </div>
       </div>

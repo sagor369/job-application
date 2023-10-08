@@ -1,10 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='grid bg-gray-100 grid-cols-2 md:grid-cols-3 items-center text-center py-14'>
-            <div className='md:ml-6 ml-3  '>
+        <div className='grid bg-green-200 grid-cols-2 md:grid-cols-3 items-center text-center py-4'>
+            <div className=' ml-3  '>
                 <h1 className='text-animation'>Life Career</h1>
             </div>
             <nav className='font-bold text-neutral-700'>
@@ -18,7 +18,8 @@ const Header = () => {
                 to='/blog'>Blog</NavLink>
             </nav>
             <div>
-                <button className='btn-primary'>Start Applying</button>
+                <a className='btn-primary' href="/#job" >Start Applying</a>
+                <a ></a>
             </div>
         </div>
     );
