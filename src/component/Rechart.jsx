@@ -42,7 +42,7 @@ import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis} from 'recharts'
 
 const Rechart = () => {
     return (
-        <ResponsiveContainer width="80%" aspect={2} >
+        <ResponsiveContainer width="60%" aspect={2} >
             <BarChart data = {assingment} >
                 <XAxis dataKey='name' />
                 <YAxis/>
